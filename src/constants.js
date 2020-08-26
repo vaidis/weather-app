@@ -1,0 +1,6 @@
+export const GET_CITIES = 'GET_CITIES'
+export const FETCH_CITY = 'FETCH_CITY'
+export const STORE_CITY = 'STORE_CITY'
+export const REMOVE_CITY = 'REMOVE_CITY'
+export const SET_LOADING_ON = 'SET_LOADING_ON'
+export const SET_LOADING_OFF = 'SET_LOADING_OFF'

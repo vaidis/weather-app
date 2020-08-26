@@ -1,0 +1,232 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* -------------------------------------- HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #314488;
+    padding: 5px;
+}
+
+.header .logo {
+    height: 45px;
+    margin: 5px;
+}
+
+.header .title {
+    color: #ffffff;
+    margin: 5px;
+}
+
+/* -------------------------------------- FORM */
+/* * { box-sizing: border-box; margin: 0; padding: 0; } */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* margin: 40px 0px; */
+    margin: 1rem; 
+}
+
+.form .wrapper {
+    max-width: 280px;
+    align-self: center;
+}
+
+.form .input {
+    display: flex;
+    flex: 1;
+    margin: 0px;
+}
+
+.form .input input[type=text] {
+    padding: .5em 1em;
+    width: 100%;
+}
+
+.form .list {
+    margin: 0px;
+    padding: 0px;
+    /* background: #a0ffa0; */
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.form .list ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form .list li {
+    list-style-type: none;
+    /* max-width: 200px; */
+    width: 100%;
+    width: auto;
+    margin: 0px;
+    padding: 8px;
+    /* background: #f1f1f1; */
+    border-bottom: 1px solid #cccccc;
+}
+
+/* -------------------------------------- CITY */
+
+.cityList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px 0px #aaaaaa;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.city .top {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.city .top h2 {
+    margin-top: 0px;
+}
+
+.city .top h2 {
+    text-align: center;
+}
+
+.city .top .close {
+    align-self: flex-end;
+}
+
+.city .top .closeIcon {
+    height: 20px;
+    width: 20px;
+    transition: fill 0.5s ease;
+    fill: #cccccc;
+}
+
+.city .top .closeIcon:hover {
+    fill: #ba4436;
+}
+
+.city .bottom {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 20px;
+}
+
+.city .bottom h3 {
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+.city .bottom .data {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.city .bottom .data .values {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 30px;
+    background: url('./assets/temperature.svg');
+    background-repeat: no-repeat;
+    background-size: 36px;
+    margin-top: 15px;
+}
+
+.city .bottom .data .values .max {
+    color: red;
+}
+
+.city .bottom .data .values .min {
+    color: blue;
+}
+
+@media screen and (max-width: 512px) {
+    .city .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .city .bottom h3 {
+        margin-bottom: 0px;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    form {
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    .form .wrapper {
+        padding: 5px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .form .input {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .form input {
+        width: 100%;
+        /* margin: 10px; */
+        padding: 15px 5px;
+    }
+    .form .list {
+        align-self: center;
+        /* width: 80%; */
+    }
+}
