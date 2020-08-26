@@ -1,3 +1,5 @@
+![Alt text](https://github.com/vaidis/weather-app/blob/master/weather-app.png?raw=true)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
