@@ -1,5 +1,13 @@
 ![Alt text](https://github.com/vaidis/weather-app/blob/master/weather-app.png?raw=true)
 
+## Install
+```
+git clone https://github.com/vaidis/weather-app.git
+cd weather-app
+npm install
+yarn start
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
